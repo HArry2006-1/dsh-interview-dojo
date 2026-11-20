@@ -1,0 +1,5 @@
+# 面试道场：宿主半侧（官网调研、LLM 对话、会话存储与 HTTP 路由）。
+# 浏览器半侧由 package.json 的 dsh.client 声明，注册右侧栏标签和输入框入口。
+- insert:
+    - id: dsh-interview-dojo
+      name: 'dsh-interview-dojo'

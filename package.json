@@ -1,0 +1,57 @@
+{
+  "name": "dsh-interview-dojo",
+  "version": "0.1.0",
+  "description": "日本留学面试模拟道场：调研目标大学官网、结合入学理由书生成问题，并进行带中日对照、词汇语法解析、逐题反馈和实时/本机语音对话的练习。",
+  "type": "module",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "interview",
+    "japanese",
+    "voice",
+    "tts"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "locale/*.json",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml",
+    "icon.svg",
+    "assets/icon-180.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "optionalDependencies": {
+    "@andresaya/edge-tts": "1.9.1"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "dsh": ">=0.2.2-0 <0.3.0-0"
+  },
+  "license": "MIT"
+}
