@@ -53,5 +53,10 @@
     "node": ">=22.12.0",
     "dsh": ">=0.2.2-0 <0.3.0-0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HArry2006-1/dsh-interview-dojo.git"
+  },
+  "homepage": "https://github.com/HArry2006-1/dsh-interview-dojo#readme"
 }
